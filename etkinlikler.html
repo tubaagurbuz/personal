@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+
+    <title>ETKİNLİKLER-TUBA GÜRBÜZ</title>
+    <link rel="stylesheet" id="cssfile" href="css/etkinlikler.css">
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+   
+  </head>
+
+  <body>
+
+    <div>
+      <input type="checkbox" class="checkbox" id="chk" />
+      <label class="label" id="label" for="chk">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+        <div class="ball"></div>
+      </label>
+    </div>
+
+    <section class="sec-01" style="margin-left:40px;">
+  
+      <div class="container">
+        <h2 class="ana_baslik">ETKİNLİKLER</h2>
+     
+        <div class="content">
+          <div class="image">
+            <img src="images/techno.jpeg" alt=""></div>
+          
+          <div class="text-box">
+            <h2 class="blog-title">TECHNO-Z </h2>
+           
+          
+              <div class="metin" id="metin">
+                 Teknoloji, yazılım, kariyer alanında ün yapmış kişilerin,
+                 şirketlerin, start-upların, insan kaynakları gibi 
+                 departmanlardan konuşmacıların sahne aldığı 
+                 Techno Z 31 MAYIS 2022 tarihinde ilk kez yüzyüze gerçekleşti.<br>
+                 Etkinliğin ardından okul bahçesinde düzenlenen djli parti ile 
+                 Bandırma'nın en büyük kariyer etkinliğini yaptık.<br>
+               
+                </div>
+            </div>  
+          </div>
+        </div>
+      </div>
+        
+    
+    </section>
+
+    <section class="sec-02">
+
+      <div class="container">
+        
+
+        <div class="content">
+          <div class="image">
+            <img src="images/23nisan.jpeg" >
+          </div>
+          <div class="text-box">
+            <h2 class="blog-title">23 NİSAN ÇOCUK EĞLENCELERİ </h2>
+           
+            <div class="metin" id="metin"><br>
+            Sosyal Etkinlik ve Eğlence Topluluğu  olarak Bandırma Belediyesi'nin
+            sahilde düzenlemiş olduğu 23 NİSAN etkinliklerine gönüllü olarak katılım sağladık.<br>
+            Rengarenk kostümler ve birbirinden eğlenceli oyunlar ile Bandırma çocuklarını 
+            eğlendirdik.
+            
+           
+            </div>
+        </div>
+    </div>
+  </div>
+      
+    </section>
+
+ 
+<section class="sec-03">
+
+      <div class="container">
+        
+
+        <div class="content">
+          <div class="image">
+            <img src="images/espor.jpeg" >
+          </div>
+          <div class="text-box">
+            <h2 class="blog-title">ÜNİVERSİTELERARASI E-SPOR TURNUVASI FİNALİ  </h2>
+          
+            <div class="metin"><br>
+                Üniversitelerarası E-Spor Turnuvasının Finalleri 2022 yılında okulumuzda gerçekleşti.<br>
+                Biz de GDSC BANÜ ve SET BANÜ ekibi olarak bu turnuvada görev aldık.<br>
+                Red Bull ile iş birliği yaparak izleyici ve oyunculara enerji içeceği dağıtımı gerçekleştirdik.
+               
+
+            </div>
+        </div>
+    </div>
+  </div>
+      
+    </section>
+    
+    <script>
+      
+      ScrollReveal({
+        
+        distance: '60px', <!--ne kadar uzağa hareket edecek  -->
+        duration: 1200, <!--animasyonların ne kadar sürede tamamlanacağını kontrol eder.-->
+       
+      });
+
+    
+      ScrollReveal().reveal('.ana_baslik, .blog-title', { delay: 500, origin: 'right' });
+      ScrollReveal().reveal('.sec-01 .image, ', { delay: 500, origin: 'top' });
+      ScrollReveal().reveal('.text-box', { delay: 700, origin: 'right' });
+      ScrollReveal().reveal('.sec-02 .image, .sec-03 .image', { delay: 500, origin: 'bottom' });
+  
+    </script>
+
+<script>
+  const chk = document.getElementById('chk');
+
+  chk.addEventListener('change', () => {
+	document.body.classList.toggle('light');
+});
+</script>
+
+  </body>
+</html>
